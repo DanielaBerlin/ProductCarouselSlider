@@ -24,3 +24,31 @@ nextBtn.addEventListener('click', () => {
     }
   }, 25);
 });
+
+
+// slider width values
+function sw() {
+    alert()
+}
+
+function sw() {
+  alert(slider.scrollWidth);
+}
+
+function sw() {
+  alert(slider.scrollLeft);
+}
+
+function sw() {
+  alert(slider.clientWidth);
+}
+
+// function calc() {
+//   alert();
+// }
+
+//Auto Play Function
+
+function autoPlay() {
+
+}
