@@ -1,0 +1,12 @@
+const thumnnails = document.getElementsByClassName
+    ("thumbnail");
+const slider = document.getElementById("slider");
+const nextBtn = document.getElementById("slide-right");
+const prevBtn = document.getElementById("slide-left");
+
+nextBtn.addEventListener("click", () => {
+    scrollAmount = 0;
+    let slideTimer = setInterval(() => {
+        slider.scrollLeft += 10;
+    }, 25);
+});
