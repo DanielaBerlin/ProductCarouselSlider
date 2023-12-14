@@ -27,21 +27,21 @@ nextBtn.addEventListener('click', () => {
 
 
 // slider width values
-function sw() {
-    alert()
-}
+// function sw() {
+//     alert(slider.scrollWidth);
+// }
 
-function sw() {
-  alert(slider.scrollWidth);
-}
+// function sl() {
+//   alert(slider.scrollLeft);
+// }
 
-function sw() {
-  alert(slider.scrollLeft);
-}
+// function cw() {
+//   alert(slider.scrollWidth);
+// }
 
-function sw() {
-  alert(slider.clientWidth);
-}
+// function calc() {
+//   alert(slider.clientWidth - slider.scrollWidth);
+// }
 
 // function calc() {
 //   alert();
@@ -50,5 +50,11 @@ function sw() {
 //Auto Play Function
 
 function autoPlay() {
-
+  if (slider.scrollLeft >= slider.scrollWidth - slider.clientWidth - 1) {
+    slider.scrollLeft = 0;
+  } else {
+    slider.scrollLeft += 1;
+  }
 }
+
+const play = setInterval(autoPlay, 10)
